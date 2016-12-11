@@ -1,0 +1,19 @@
+Thank your for installing the uptime monitor.
+Complete your installation by performing these steps.
+            
+1. You should add the following command to your cron table. It should run
+every minute:
+---
+php <install directory>/artisan schedule:run
+---
+
+2. Specify a Slack webhook url in the notifications.slack.url key
+in configuration.php.
+
+3. Add your first monitor by running:
+---
+php <install directory>/artisan monitor:create
+---
+
+You'll find full documentation at https://github.com/spatie/uptime-monitor-app
+Happy monitoring!

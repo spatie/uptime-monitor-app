@@ -21,25 +21,7 @@
             "cd laravel && php artisan key:generate",
             "cd laravel && php artisan optimize",
             "cd laravel && php artisan migrate --force",
-            "echo 'Thank your for installing the uptime monitor.'",
-            "echo 'Complete your installation by performing these steps.'",
-            "echo ''",
-            "echo '1. You should add the following command to your cron table. It should run'",
-            "echo 'every minute:'",
-            "echo '---'",
-            "echo \"php ${pwd}/artisan schedule:run \"",
-            "echo '---'",
-            "echo ''",
-            "echo '2. Specify a Slack webhook url in the notifications.slack.url key'",
-            "echo \"in ${pwd}/configuration.php \"",
-            "echo ''",
-            "echo '3. Add your first monitor by running:'",
-            "echo '---'",
-            "echo \"php ${pwd}/artisan monitor:create \"",
-            "echo '---'",
-            "echo ''",
-            "echo 'You'll find full documentation at https://github.com/spatie/uptime-monitor-app'",
-            "echo 'Happy monitoring!'"
+            "cat post-install-instructions.txt"
         ]
     },
     "config": {
