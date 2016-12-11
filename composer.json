@@ -1,0 +1,25 @@
+{
+    "name": "spatie/uptime-monitor-app",
+    "description": "Uptime monitor",
+    "keywords": ["uptime", "monitor", "laravel", "spatie"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^7.0"
+    },
+    "scripts": {
+        "post-root-package-install": [
+
+        ],
+        "post-create-project-cmd": [
+            "php -r \"file_exists('laravel/.env') || copy('laravel/.env.example', '.env');\"",
+            "ln -s laravel/.env .env",
+            "cd laravel && composer install",
+            "cd laravel && php artisan key:generate",
+            "cd laravel && php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
