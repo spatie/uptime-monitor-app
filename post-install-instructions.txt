@@ -1,4 +1,5 @@
-Thank your for installing the uptime monitor.
+
+
 Complete your installation by performing these steps.
             
 1. You should add the following command to your cron table. It should run
@@ -16,4 +17,5 @@ php <install directory>/artisan monitor:create
 ---
 
 You'll find full documentation at https://github.com/spatie/uptime-monitor-app
+
 Happy monitoring!
