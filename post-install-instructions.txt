@@ -16,6 +16,8 @@ in configuration.php.
 php <installation path>/artisan monitor:create
 ---
 
+The configuration file `configuration.php` can found inside the installation directory.
+
 You'll find full documentation at https://github.com/spatie/uptime-monitor-app
 
 Happy monitoring!

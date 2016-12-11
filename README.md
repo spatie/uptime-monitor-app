@@ -4,7 +4,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/uptime-monitor-app.svg?style=flat-square)](https://packagist.org/packages/spatie/uptime-monitor-app)
 
-Uptime-monitor is a powerful, easy to configure uptime monitor written in PHP 7. It will notify you when your site is down (and when it comes back up). You can also be notified a few days before an SSL certificate on one of your sites expires. Out of the box you can be notified via mail or Slack.
+Uptime-monitor is a powerful, easy to configure uptime monitor written in PHP 7. It will notify you when one of your sites goes down (and when it comes back up). You can also be notified a few days before an SSL certificate on one of your sites expires. Out of the box you can be notified via mail or Slack.
 
 Here are some examples of how the Slack notifications look like:
 
@@ -34,7 +34,6 @@ php <installation path>/artisan schedule:run
 
 2. Specify a Slack webhook url in the `notifications.slack.url` key
 in `configuration.php` found in the installation directory.
-
 
 ## Configuration
 
