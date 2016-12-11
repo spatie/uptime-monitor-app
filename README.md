@@ -8,6 +8,9 @@ Uptime-monitor is a powerful, easy to configure uptime monitor. It will notify y
 
 Here are some examples of how the Slack notifications look like:
 
+<img src="https://docs.spatie.be/images/uptime-monitor/monitor-failed.jpg"><br />
+<img src="https://docs.spatie.be/images/uptime-monitor/monitor-recovered.jpg"><br />
+<img src="https://docs.spatie.be/images/uptime-monitor/ssl-expiring-soon.jpg"><br />
 
 
 Under the hood the uptime-monitor is a vanilla Laravel 5.3 application with our [laravel-uptime-monitor](https://docs.spatie.be/laravel-uptime-monitor) installed into it. Reading the configuration file of this application is a good way to quickly get a feel of what `uptime-monitor` can do. Here's the content of the config file:
