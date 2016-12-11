@@ -13,7 +13,7 @@ Here are some examples of how the Slack notifications look like:
 <img src="https://docs.spatie.be/images/uptime-monitor/ssl-expiring-soon.jpg"><br />
 
 
-Under the hood the uptime-monitor is a vanilla Laravel 5.3 application with the [laravel-uptime-monitor](https://docs.spatie.be/laravel-uptime-monitor) installed into it. 
+Under the hood the uptime-monitor is a vanilla Laravel 5.3 application with the [laravel-uptime-monitor](https://docs.spatie.be/laravel-uptime-monitor) installed into it. If you know your way around Laravel, it's recommended that you use [laravel-uptime-monitor](https://docs.spatie.be/laravel-uptime-monitor) instead of this app.
 
 ## Installation
 
@@ -33,7 +33,7 @@ php <installation path>/artisan schedule:run
 ```
 
 2. Specify a Slack webhook url in the `notifications.slack.url` key
-in `configuration.php` found in the installation directory.
+in `configuration.php` found in the installation directory. You can [create a new webhook url](https://my.slack.com/services/new/incoming-webhook/) on the Slack website.
 
 ## Configuration
 
@@ -192,15 +192,11 @@ Under the hood the uptime-monitor is a vanilla Laravel 5.3 application with our 
 
 By default the application will use an `sqlite` database located at `<installation directory>/database.sqlite` to store all monitors.
 
-
-## API
-
-Currently this package does not offer an API, if you need that take a look at [this package](https://github.com/LKDevelopment/laravel-uptime-monitor-api).
-
 ## Documentation
-You'll find the documentation on [https://docs.spatie.be/laravel-uptime-monitor/v1](https://docs.spatie.be/laravel-uptime-monitor/v1). It includes detailed info on how to install and use the package.
 
-Find yourself stuck using the package? Found a bug? Do you have general questions or suggestions for improving the uptime monitor? Feel free to [create an issue on GitHub](https://github.com/spatie/laravel-uptime-monitor/issues), we'll try to address it as soon as possible.
+You'll find the documentation of the underlying `laravel-uptime-monitor` package on [https://docs.spatie.be/laravel-uptime-monitor/v1](https://docs.spatie.be/laravel-uptime-monitor/v1). 
+
+Find yourself stuck using this app or the underlying package? Found a bug? Do you have general questions or suggestions for improving the uptime monitor? Feel free to [create an issue on GitHub](https://github.com/spatie/laravel-uptime-monitor/issues), we'll try to address it as soon as possible.
 
 ## Postcardware
 
@@ -213,20 +209,6 @@ The best postcards will get published on the open source page on our website.
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Testing
-
-To run the tests you'll have to start the included node based server first in a separate terminal window.
-
-```bash
-cd tests/server
-./start_server.sh
-```
-
-With the server running, you can start testing.
-```bash
-vendor/bin/phpunit
-```
 
 ## Contributing
 

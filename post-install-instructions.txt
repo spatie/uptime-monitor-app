@@ -9,7 +9,8 @@ php <installation path>/artisan schedule:run
 ---
 
 2. Specify a Slack webhook url in the notifications.slack.url key
-in configuration.php.
+in configuration.php. You can create a webhook url on the slack
+website: https://my.slack.com/services/new/incoming-webhook/
 
 3. Add your first monitor by running:
 ---
