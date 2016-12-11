@@ -22,7 +22,7 @@
             "cd laravel && php artisan optimize",
             "cd laravel && php artisan migrate --force",
             "echo 'Thank your for installing the uptime monitor.'",
-            "echo 'Let\'s complete your installation.'",
+            "echo 'Let\\'s complete your installation.'",
             "echo ''",
             "echo '1. You should add the following command to your cron table. It should run'",
             "echo 'every minute:'",
