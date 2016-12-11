@@ -12,7 +12,7 @@
 
         ],
         "post-create-project-cmd": [
-            "php -r \"file_exists('laravel/.env') || copy('laravel/.env.example', '.env');\"",
+            "php -r \"file_exists('laravel/.env') || copy('laravel/.env.example', 'laravel/.env');\"",
             "ln -s laravel/.env .env",
             "cd laravel && composer install",
             "cd laravel && php artisan key:generate",
