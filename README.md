@@ -13,11 +13,36 @@ Here are some examples of how the Slack notifications look like:
 <img src="https://docs.spatie.be/images/uptime-monitor/ssl-expiring-soon.jpg"><br />
 
 
-Under the hood the uptime-monitor is a vanilla Laravel 5.3 application with our [laravel-uptime-monitor](https://docs.spatie.be/laravel-uptime-monitor) installed into it. Reading the configuration file of this application is a good way to quickly get a feel of what `uptime-monitor` can do. Here's the content of the config file:
+Under the hood the uptime-monitor is a vanilla Laravel 5.3 application with the [laravel-uptime-monitor](https://docs.spatie.be/laravel-uptime-monitor) installed into it. 
+
+## Installation
+
+You can install the application by issuing this command:
+
+```bash
+composer create-project spatie/uptime-monitor-app <name of install directory>
+```
+
+To complete your installation these steps must be performed:
+            
+1. You should add the following command to your cron table. It should run
+every minute:
+
+```bash
+php <installation path>/artisan schedule:run
+```
+
+2. Specify a Slack webhook url in the `notifications.slack.url` key
+in `configuration.php` found in the installation directory.
+
+
+## Configuration
+
+The configuration file `configuration.php` is located inside the installation directory.
+
+Reading it is a good way to quickly get a feel of what `uptime-monitor-app` can do. Here's the content of the config file:
 
 ```php
-<?php
-
 return [
 
     /*
@@ -137,26 +162,7 @@ return [
 ];
 ```
 
-## Installation
 
-You can install the application by issuing this command:
-
-```bash
-composer create-project spatie/uptime-monitor-app <name of install directory>
-```
-
-
-To complete your installation these steps must be performed:
-            
-1. You should add the following command to your cron table. It should run
-every minute:
-
----
-php <installation path>/artisan schedule:run
----
-
-2. Specify a Slack webhook url in the `notifications.slack.url` key
-in `configuration.php` found in the installation directory.
 
 
 ## Basic usage
