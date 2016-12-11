@@ -1,6 +1,6 @@
 {
     "name": "spatie/uptime-monitor-app",
-    "description": "An easy to install uptime and ssl certificate monitor",
+    "description": "A PHP application to monitor uptime and ssl certificates",
     "keywords": ["uptime", "monitor", "ssl", "certificate", "laravel", "spatie"],
     "license": "MIT",
     "type": "project",
