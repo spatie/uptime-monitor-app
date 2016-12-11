@@ -35,7 +35,7 @@ return [
         ],
 
         'slack' => [
-            'webhook_url' => env('UPTIME_MONITOR_SLACK_WEBHOOK_URL'),
+            'webhook_url' => '',
         ],
 
         /*
