@@ -20,7 +20,7 @@
             "cd laravel && composer install",
             "cd laravel && php artisan key:generate",
             "cd laravel && php artisan optimize",
-            "cd laravel && php artisan migrate"
+            "cd laravel && php artisan migrate --force"
         ]
     },
     "config": {
