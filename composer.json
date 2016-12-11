@@ -14,9 +14,13 @@
         "post-create-project-cmd": [
             "php -r \"file_exists('laravel/.env') || copy('laravel/.env.example', 'laravel/.env');\"",
             "ln -s laravel/.env .env",
+            "ln -s laravel/config/laravel-uptime-monitor.php configuration.php",
+            "ln -s laravel/artisan artisan",
+            "touch database.sqlite",
             "cd laravel && composer install",
             "cd laravel && php artisan key:generate",
-            "cd laravel && php artisan optimize"
+            "cd laravel && php artisan optimize",
+            "cd laravel && php artisan migrate"
         ]
     },
     "config": {
