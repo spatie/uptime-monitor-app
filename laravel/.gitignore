@@ -3,3 +3,4 @@
 /storage/*.key
 /vendor
 .env
+composer.lock
