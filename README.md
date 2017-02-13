@@ -25,14 +25,14 @@ composer create-project spatie/uptime-monitor-app <name of install directory>
 
 To complete your installation these steps must be performed:
             
-1. You should add the following command to your cron table. It should run
+First uou should add the following command to your cron table. It should run
 every minute:
 
 ```bash
 php <installation path>/artisan schedule:run
 ```
 
-2. Specify a Slack webhook url in the `notifications.slack.url` key
+Secondly, specify a Slack webhook url in the `notifications.slack.url` key
 in `configuration.php` found in the installation directory. You can [create a new webhook url](https://my.slack.com/services/new/incoming-webhook/) on the Slack website.
 
 ## Configuration
