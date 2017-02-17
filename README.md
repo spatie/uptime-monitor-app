@@ -25,7 +25,7 @@ composer create-project spatie/uptime-monitor-app <name of install directory>
 
 To complete your installation these steps must be performed:
             
-First uou should add the following command to your cron table. It should run
+First you should add the following command to your cron table. It should run
 every minute:
 
 ```bash
@@ -166,15 +166,15 @@ return [
 
 ## Basic usage
 
-To start monitoring an url:
+To start monitoring a url:
 
 ```php
 php artisan monitor:create <url>
 ```
 
-and answer the questions that are asked. If you're url starts with `https://` the application will also monitor the ssl certificate.
+and answer the questions that are asked. If your url starts with `https://` the application will also monitor the ssl certificate.
 
-To stop monitor an url issue this command:
+To stop monitoring a url issue this command:
 
 ```php
 php artisan monitor:delete <url>
@@ -190,7 +190,7 @@ php artisan monitor:list
 
 Under the hood the uptime-monitor is a vanilla Laravel 5.3 application with our [laravel-uptime-monitor](https://github.com/spatie/laravel-uptime-monitor) installed into it. Please refer to [it's extensive documentation](https://docs.spatie.be/laravel-uptime-monitor) to know more how to configure and use this application. 
 
-By default the application will use an `sqlite` database located at `<installation directory>/database.sqlite` to store all monitors.
+By default the application will use a `sqlite` database located at `<installation directory>/database.sqlite` to store all monitors.
 
 ## Documentation
 
